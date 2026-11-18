@@ -2275,7 +2275,8 @@ position = Vector2(41.2, 40.2)
 scale = Vector2(1.5875, 1.5562501)
 sprite_frames = SubResource("SpriteFrames_vyxil")
 animation = &"game over"
-frame_progress = 0.7456182
+frame = 33
+frame_progress = 0.39057365
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1114836624]
 shape = SubResource("RectangleShape2D_vyxil")
