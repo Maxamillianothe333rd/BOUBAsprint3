@@ -20,7 +20,7 @@ size = Vector2(1000, 101.5)
 script = ExtResource("1_jyhfs")
 
 [node name="Player" parent="." unique_id=1951049836 instance=ExtResource("1_o5qli")]
-position = Vector2(72, 363)
+position = Vector2(119, 368)
 
 [node name="Enemiesgroup" type="Node2D" parent="." unique_id=1302359883]
 
