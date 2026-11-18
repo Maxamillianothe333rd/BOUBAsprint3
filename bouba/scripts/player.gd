@@ -13,7 +13,7 @@ func _physics_process(delta: float) -> void:
 		return
 	# animation
 	if velocity.x > 1 or velocity.x < -1:
-		animated_sprite_2d.animation = "walk"
+		animated_sprite_2d.animation = "sprint"
 	else:
 		animated_sprite_2d.animation = "idle"
 	# Add the gravity.
@@ -42,7 +42,7 @@ func _physics_process(delta: float) -> void:
 
 func attack():
 	if Input.is_action_just_pressed("Attack"):
-		animated_sprite_2d.animation = "attack"
+		animated_sprite_2d.animation = "roll"
 		
 func die() -> void:
 	animated_sprite_2d.animation = "hit"
