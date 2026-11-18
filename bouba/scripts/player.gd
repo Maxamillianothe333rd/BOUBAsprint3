@@ -45,5 +45,5 @@ func attack():
 		animated_sprite_2d.animation = "roll"
 		
 func die() -> void:
-	animated_sprite_2d.animation = "hit"
+	# animated_sprite_2d.animation = "hit"
 	alive = false
