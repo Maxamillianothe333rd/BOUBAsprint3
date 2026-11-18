@@ -40,7 +40,8 @@ func _physics_process(delta: float) -> void:
 		animated_sprite_2d.flip_h = true
 
 func attack():
-	pass
+	if Input.is_action_just_pressed("Attack"):
+		animated_sprite_2d.animation = "attack"
 		
 func die() -> void:
 	animated_sprite_2d.animation = "hit"
