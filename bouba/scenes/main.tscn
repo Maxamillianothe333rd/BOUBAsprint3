@@ -28,10 +28,10 @@ position = Vector2(119, 368)
 [node name="Enemiesgroup" type="Node2D" parent="." unique_id=1302359883]
 
 [node name="mind_control" parent="Enemiesgroup" unique_id=1373321473 instance=ExtResource("3_sugp2")]
-position = Vector2(1669, 390)
+position = Vector2(1668, 507)
 
 [node name="zombie" parent="Enemiesgroup" unique_id=799977199 instance=ExtResource("3_sugp2")]
-position = Vector2(865, 273)
+position = Vector2(856, 403)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1225467134]
 position = Vector2(503, 485)

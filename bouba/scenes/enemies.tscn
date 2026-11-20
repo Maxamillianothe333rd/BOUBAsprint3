@@ -254,7 +254,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ynsgh"]
-size = Vector2(180, 270)
+size = Vector2(88, 90)
 
 [node name="mind_control" type="Area2D" unique_id=1373321473]
 script = ExtResource("1_q4yn1")
@@ -267,6 +267,7 @@ frame = 1
 frame_progress = 0.64026743
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1081913024]
+position = Vector2(6, -17)
 shape = SubResource("RectangleShape2D_ynsgh")
 
 [node name="Timer" type="Timer" parent="." unique_id=636711896]
