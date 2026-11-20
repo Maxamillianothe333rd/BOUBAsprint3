@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://c1c48xbvh1fdp" path="res://scripts/main.gd" id="1_jyhfs"]
 [ext_resource type="PackedScene" uid="uid://7qsl5gegup0m" path="res://scenes/player.tscn" id="1_o5qli"]
+[ext_resource type="PackedScene" uid="uid://ddg885w3duyf2" path="res://scenes/bitzy.tscn" id="3_jyhfs"]
 [ext_resource type="PackedScene" uid="uid://3svrhsjqb8bq" path="res://scenes/enemies.tscn" id="3_sugp2"]
 
 [sub_resource type="QuadMesh" id="QuadMesh_ynsgh"]
@@ -22,12 +23,14 @@ script = ExtResource("1_jyhfs")
 [node name="Player" parent="." unique_id=1951049836 instance=ExtResource("1_o5qli")]
 position = Vector2(119, 368)
 
+[node name="Bitzy" parent="." unique_id=679909516 instance=ExtResource("3_jyhfs")]
+
 [node name="Enemiesgroup" type="Node2D" parent="." unique_id=1302359883]
 
-[node name="Enemies2" parent="Enemiesgroup" unique_id=1373321473 instance=ExtResource("3_sugp2")]
+[node name="mind_control" parent="Enemiesgroup" unique_id=1373321473 instance=ExtResource("3_sugp2")]
 position = Vector2(1669, 390)
 
-[node name="Enemies" parent="Enemiesgroup" unique_id=799977199 instance=ExtResource("3_sugp2")]
+[node name="zombie" parent="Enemiesgroup" unique_id=799977199 instance=ExtResource("3_sugp2")]
 position = Vector2(865, 273)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1225467134]
