@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cff3kojny0hmj"
-path="res://.godot/imported/jump.webp-4252225872b1c458dade7c4386141f1a.ctex"
+uid="uid://cxymulybmlpm6"
+path="res://.godot/imported/tilemap prologue.png-4b6df818d2f30f24d4a1b5a7a52efa92.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/player/jump.webp"
-dest_files=["res://.godot/imported/jump.webp-4252225872b1c458dade7c4386141f1a.ctex"]
+source_file="res://assets/images/tilemap prologue.png"
+dest_files=["res://.godot/imported/tilemap prologue.png-4b6df818d2f30f24d4a1b5a7a52efa92.ctex"]
 
 [params]
 
