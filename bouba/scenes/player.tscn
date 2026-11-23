@@ -2257,24 +2257,20 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ynsgh"]
-size = Vector2(54, 67)
+size = Vector2(34, 43)
 
 [node name="Player" type="CharacterBody2D" unique_id=1951049836]
+scale = Vector2(0.95, 0.95)
 script = ExtResource("1_qlg0r")
+metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1602670133]
 texture_filter = 1
-scale = Vector2(1.5875, 1.5562501)
+scale = Vector2(1, 0.98)
 sprite_frames = SubResource("SpriteFrames_vyxil")
-animation = &"jump"
+animation = &"idle"
 autoplay = "idle"
-frame = 2
-frame_progress = 0.38223854
-
-[node name="Camera2D" type="Camera2D" parent="." unique_id=1580354823]
-position_smoothing_enabled = true
-position_smoothing_speed = 8.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=389679311]
-position = Vector2(-5, 0.5)
+position = Vector2(-3, 0.5)
 shape = SubResource("RectangleShape2D_ynsgh")

@@ -1,0 +1,71 @@
+[gd_scene format=3 uid="uid://dec6jhr8emn55"]
+
+[ext_resource type="Script" uid="uid://bkmpoeih1uyvu" path="res://scripts/brainwasheddude.gd" id="1_byep6"]
+[ext_resource type="Texture2D" uid="uid://c3bq480mtkw0v" path="res://assets/images/enemy/sheets/mind_control/Mind_control_sprint.png" id="1_evw45"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_byep6"]
+atlas = ExtResource("1_evw45")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qcrie"]
+atlas = ExtResource("1_evw45")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7fu4c"]
+atlas = ExtResource("1_evw45")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nu7ro"]
+atlas = ExtResource("1_evw45")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_45hfi"]
+atlas = ExtResource("1_evw45")
+region = Rect2(0, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tqhqk"]
+atlas = ExtResource("1_evw45")
+region = Rect2(64, 64, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vyxil"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_byep6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qcrie")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7fu4c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nu7ro")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_45hfi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tqhqk")
+}],
+"loop": 1,
+"name": &"Chasing",
+"speed": 16.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vyxil"]
+size = Vector2(41, 34)
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=12700795]
+script = ExtResource("1_byep6")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1601701844]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_vyxil")
+animation = &"Chasing"
+autoplay = "Chasing"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=819183972]
+position = Vector2(0.5, -4)
+shape = SubResource("RectangleShape2D_vyxil")
