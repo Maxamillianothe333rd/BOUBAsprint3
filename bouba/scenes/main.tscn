@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://c1c48xbvh1fdp" path="res://scripts/main.gd" id="1_jyhfs"]
 [ext_resource type="PackedScene" uid="uid://7qsl5gegup0m" path="res://scenes/player.tscn" id="1_o5qli"]
+[ext_resource type="Texture2D" uid="uid://dktpau8n3j24g" path="res://assets/images/objects/prologue_background.png" id="2_tbgi4"]
 [ext_resource type="PackedScene" uid="uid://ddg885w3duyf2" path="res://scenes/bitzy.tscn" id="3_jyhfs"]
 [ext_resource type="Texture2D" uid="uid://cxymulybmlpm6" path="res://assets/images/tilemap prologue.png" id="3_sugp2"]
 
@@ -96,6 +97,11 @@ sources/0 = SubResource("TileSetAtlasSource_jyhfs")
 
 [node name="Main" type="Node2D" unique_id=310587639]
 script = ExtResource("1_jyhfs")
+
+[node name="Background" type="Sprite2D" parent="." unique_id=755387324]
+position = Vector2(2184, -225.00002)
+scale = Vector2(1.678, 1.5251778)
+texture = ExtResource("2_tbgi4")
 
 [node name="Player" parent="." unique_id=1951049836 instance=ExtResource("1_o5qli")]
 position = Vector2(128, -88)
