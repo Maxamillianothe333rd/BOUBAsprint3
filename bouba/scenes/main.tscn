@@ -121,5 +121,5 @@ tile_map_data = PackedByteArray("AAAAAAAAAAAAAAMAAAABAAAAAAABAAMAAAACAAAAAAABAAM
 tile_set = SubResource("TileSet_vyxil")
 rendering_quadrant_size = 32
 
-[node name="CharacterBody2D" parent="." unique_id=12700795 instance=ExtResource("6_tefeu")]
-position = Vector2(663, 145)
+[node name="Brainwashed" parent="." unique_id=12700795 instance=ExtResource("6_tefeu")]
+position = Vector2(681, 146)
