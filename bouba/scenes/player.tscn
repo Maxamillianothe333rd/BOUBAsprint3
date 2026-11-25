@@ -2259,10 +2259,13 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ynsgh"]
 size = Vector2(30.526318, 41.052635)
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_vyxil"]
+radius = 14.736843
+height = 40.0
+
 [node name="Player" type="CharacterBody2D" unique_id=1951049836]
 scale = Vector2(0.95, 0.95)
 script = ExtResource("1_qlg0r")
-metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1602670133]
 texture_filter = 1
@@ -2274,3 +2277,12 @@ autoplay = "idle"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=389679311]
 position = Vector2(-2.631579, 1.578948)
 shape = SubResource("RectangleShape2D_ynsgh")
+
+[node name="hurtBox" type="Area2D" parent="." unique_id=265706778]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="hurtBox" unique_id=1912729803]
+light_mask = 3
+position = Vector2(-2.1052632, 1.0526316)
+shape = SubResource("CapsuleShape2D_vyxil")
+
+[connection signal="area_entered" from="hurtBox" to="." method="_on_hurt_box_area_entered"]
