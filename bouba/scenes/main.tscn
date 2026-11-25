@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://cxymulybmlpm6" path="res://assets/images/tilemap prologue.png" id="3_sugp2"]
 [ext_resource type="PackedScene" uid="uid://dec6jhr8emn55" path="res://scenes/brainwasheddude.tscn" id="6_tefeu"]
 [ext_resource type="PackedScene" uid="uid://b7d6xpldfco2i" path="res://scenes/zombie.tscn" id="7_o6xl0"]
+[ext_resource type="PackedScene" uid="uid://b0dppyt5iawwp" path="res://scenes/hearts.tscn" id="8_tipki"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jyhfs"]
 texture = ExtResource("3_sugp2")
@@ -123,3 +124,7 @@ position = Vector2(681, 146)
 
 [node name="Zombie" parent="." unique_id=989445937 instance=ExtResource("7_o6xl0")]
 position = Vector2(2190, 15)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=809747271]
+
+[node name="heartsContainer" parent="CanvasLayer" unique_id=572477552 instance=ExtResource("8_tipki")]

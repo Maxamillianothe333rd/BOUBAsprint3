@@ -5,7 +5,8 @@ extends CharacterBody2D
 const SPEED = 300.0
 const JUMP_VELOCITY = -600.0
 var alive = true
-var currentHealth: int = 3
+@onready var currentHealth: int = maxHealth
+@export var maxHealth = 3
 
 func _physics_process(delta: float) -> void:
 	
@@ -52,4 +53,6 @@ func die() -> void:
 func _on_hurt_box_area_entered(area: Area2D) -> void:
 	if area.name == "hitBox":
 		currentHealth -= 1
+		if currentHealth < 0:
+			currentHealth = maxHealth
 		print_debug(currentHealth)

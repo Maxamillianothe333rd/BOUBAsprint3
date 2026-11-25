@@ -2261,7 +2261,7 @@ size = Vector2(30.526318, 41.052635)
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_vyxil"]
 radius = 14.736843
-height = 40.0
+height = 42.105267
 
 [node name="Player" type="CharacterBody2D" unique_id=1951049836]
 scale = Vector2(0.95, 0.95)

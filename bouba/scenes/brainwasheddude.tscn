@@ -56,6 +56,9 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vyxil"]
 size = Vector2(32, 33)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ynsgh"]
+size = Vector2(34, 33)
+
 [node name="Brainwashed" type="CharacterBody2D" unique_id=12700795]
 script = ExtResource("1_byep6")
 metadata/_edit_group_ = true
@@ -71,3 +74,9 @@ frame_progress = 0.519449
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=819183972]
 position = Vector2(-1, -2.5)
 shape = SubResource("RectangleShape2D_vyxil")
+
+[node name="hitBox" type="Area2D" parent="." unique_id=428791069]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="hitBox" unique_id=1724067876]
+position = Vector2(0, -2.5)
+shape = SubResource("RectangleShape2D_ynsgh")
