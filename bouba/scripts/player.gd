@@ -5,7 +5,7 @@ extends CharacterBody2D
 const SPEED = 300.0
 const JUMP_VELOCITY = -450.0
 var alive = true
-
+var currentHealth: int = 3
 
 func _physics_process(delta: float) -> void:
 	
@@ -47,3 +47,9 @@ func attack():
 func die() -> void:
 	animated_sprite_2d.animation = "getting hurt"
 	alive = false
+
+
+func _on_hurt_box_area_entered(area: Area2D) -> void:
+	if area.name == "hitBox":
+		currentHealth -= 1
+		print_debug(currentHealth)
