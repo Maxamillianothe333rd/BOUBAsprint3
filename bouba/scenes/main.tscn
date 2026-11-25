@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://cxymulybmlpm6" path="res://assets/images/tilemap prologue.png" id="3_sugp2"]
 [ext_resource type="PackedScene" uid="uid://dec6jhr8emn55" path="res://scenes/brainwasheddude.tscn" id="6_tefeu"]
 [ext_resource type="PackedScene" uid="uid://b7d6xpldfco2i" path="res://scenes/zombie.tscn" id="7_o6xl0"]
+[ext_resource type="Texture2D" uid="uid://dh3dco7li7tuw" path="res://assets/images/objects/house.png" id="8_85g3d"]
 [ext_resource type="PackedScene" uid="uid://b0dppyt5iawwp" path="res://scenes/hearts.tscn" id="8_tipki"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jyhfs"]
@@ -104,6 +105,11 @@ script = ExtResource("1_jyhfs")
 position = Vector2(2184, -225.00002)
 scale = Vector2(1.678, 1.5251778)
 texture = ExtResource("2_tbgi4")
+
+[node name="House" type="Sprite2D" parent="." unique_id=1485980315]
+position = Vector2(2536.0002, -48.000004)
+scale = Vector2(2.96875, 3.03125)
+texture = ExtResource("8_85g3d")
 
 [node name="Player" parent="." unique_id=1951049836 instance=ExtResource("1_o5qli")]
 position = Vector2(128, -88)
