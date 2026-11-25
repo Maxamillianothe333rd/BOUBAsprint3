@@ -26,3 +26,6 @@ func _physics_process(delta: float) -> void:
 		animated_sprite_2d.flip_h = true
 	elif direction == -1.0:
 		animated_sprite_2d.flip_h = false
+		
+func attack():
+	pass
