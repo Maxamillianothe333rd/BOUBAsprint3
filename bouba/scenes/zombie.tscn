@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://b7d6xpldfco2i"]
 
 [ext_resource type="Texture2D" uid="uid://cn1v8vpju33s7" path="res://assets/images/enemy/sheets/zombie/Zombie_attack.png" id="1_4gx57"]
+[ext_resource type="Script" uid="uid://binri7lbw8d1d" path="res://scripts/zombie.gd" id="1_ycv6i"]
 [ext_resource type="Texture2D" uid="uid://b4qb08w61xhsi" path="res://assets/images/enemy/sheets/zombie/Zombie_damage.png" id="2_ycv6i"]
 [ext_resource type="Texture2D" uid="uid://dsv5txs1s2xo4" path="res://assets/images/enemy/sheets/zombie/Zombie_Idle.png" id="3_pjjxt"]
 [ext_resource type="Texture2D" uid="uid://djl82ucp3vs8n" path="res://assets/images/enemy/sheets/zombie/zombie_walk.png" id="4_7pfmu"]
@@ -200,6 +201,7 @@ animations = [{
 size = Vector2(28, 34)
 
 [node name="Zombie" type="CharacterBody2D" unique_id=989445937]
+script = ExtResource("1_ycv6i")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=325397328]
 sprite_frames = SubResource("SpriteFrames_lld7t")
