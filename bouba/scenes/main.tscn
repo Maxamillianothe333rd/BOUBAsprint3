@@ -128,3 +128,9 @@ position = Vector2(2190, 15)
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=809747271]
 
 [node name="heartsContainer" parent="CanvasLayer" unique_id=572477552 instance=ExtResource("8_tipki")]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -56.0
+offset_right = 0.0
+grow_horizontal = 0
