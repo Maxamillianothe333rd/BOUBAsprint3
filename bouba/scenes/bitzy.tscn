@@ -1710,6 +1710,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lld7t"]
+size = Vector2(409, 363)
 
 [node name="Bitzy" type="CharacterBody2D" unique_id=679909516]
 
@@ -1722,6 +1723,7 @@ frame = 5
 frame_progress = 0.8431775
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1763343536]
+position = Vector2(-0.5, -31.5)
 shape = SubResource("RectangleShape2D_lld7t")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=691387802]
