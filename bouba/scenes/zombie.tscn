@@ -206,6 +206,7 @@ script = ExtResource("1_ycv6i")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=325397328]
 sprite_frames = SubResource("SpriteFrames_lld7t")
 animation = &"walk"
+autoplay = "walk"
 frame = 8
 frame_progress = 0.3579055
 
