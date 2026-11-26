@@ -59,6 +59,9 @@ size = Vector2(32, 33)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ynsgh"]
 size = Vector2(34, 33)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_byep6"]
+size = Vector2(46, 36)
+
 [node name="Brainwashed" type="CharacterBody2D" unique_id=12700795]
 script = ExtResource("1_byep6")
 metadata/_edit_group_ = true
@@ -68,10 +71,9 @@ texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_vyxil")
 animation = &"Chasing"
 autoplay = "Chasing"
-frame = 5
-frame_progress = 0.519449
+frame_progress = 0.7432346
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=819183972]
+[node name="HurtBox" type="CollisionShape2D" parent="." unique_id=819183972]
 position = Vector2(-1, -2.5)
 shape = SubResource("RectangleShape2D_vyxil")
 
@@ -80,3 +82,10 @@ shape = SubResource("RectangleShape2D_vyxil")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="hitBox" unique_id=1724067876]
 position = Vector2(0, -2.5)
 shape = SubResource("RectangleShape2D_ynsgh")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=885848332]
+position = Vector2(0, -2.5)
+
+[node name="SensePlayer" type="CollisionShape2D" parent="Area2D" unique_id=1360153870]
+position = Vector2(-13, 0)
+shape = SubResource("RectangleShape2D_byep6")

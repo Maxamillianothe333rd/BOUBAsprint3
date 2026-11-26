@@ -201,7 +201,10 @@ animations = [{
 size = Vector2(32, 36)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kr53x"]
-size = Vector2(28, 36)
+size = Vector2(38, 36)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lld7t"]
+size = Vector2(62, 36)
 
 [node name="Zombie" type="CharacterBody2D" unique_id=377507129]
 script = ExtResource("1_ycv6i")
@@ -209,15 +212,22 @@ metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=14612690]
 sprite_frames = SubResource("SpriteFrames_lld7t")
-animation = &"walk"
+animation = &"attack"
 autoplay = "walk"
+frame_progress = 0.3075561
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=753038574]
+[node name="HurtBox" type="CollisionShape2D" parent="." unique_id=753038574]
 position = Vector2(6, 0)
 shape = SubResource("RectangleShape2D_ujrmm")
 
 [node name="HitBox" type="Area2D" parent="." unique_id=869664591]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HitBox" unique_id=624912988]
-position = Vector2(-6, 0)
+position = Vector2(-11, 0)
 shape = SubResource("RectangleShape2D_kr53x")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1182953449]
+
+[node name="SensePlayer" type="CollisionShape2D" parent="Area2D" unique_id=1087592638]
+position = Vector2(-21, 0)
+shape = SubResource("RectangleShape2D_lld7t")
