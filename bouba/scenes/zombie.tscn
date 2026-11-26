@@ -212,8 +212,8 @@ script = ExtResource("1_ycv6i")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=325397328]
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_lld7t")
-animation = &"idle"
-autoplay = "idle"
+animation = &"walk"
+autoplay = "walk"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1596610434]
 position = Vector2(3.5, 0)

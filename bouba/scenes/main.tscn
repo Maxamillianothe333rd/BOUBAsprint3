@@ -3,7 +3,9 @@
 [ext_resource type="Script" uid="uid://c1c48xbvh1fdp" path="res://scripts/main.gd" id="1_jyhfs"]
 [ext_resource type="PackedScene" uid="uid://7qsl5gegup0m" path="res://scenes/player.tscn" id="1_o5qli"]
 [ext_resource type="Texture2D" uid="uid://dktpau8n3j24g" path="res://assets/images/objects/prologue_background.png" id="2_tbgi4"]
+[ext_resource type="Texture2D" uid="uid://1qjk85tn8goc" path="res://assets/images/objects/large_tree.png" id="3_85g3d"]
 [ext_resource type="Texture2D" uid="uid://cxymulybmlpm6" path="res://assets/images/tilemap prologue.png" id="3_sugp2"]
+[ext_resource type="Texture2D" uid="uid://di732evo6vl7e" path="res://assets/images/objects/small_tree.png" id="4_choun"]
 [ext_resource type="PackedScene" uid="uid://dec6jhr8emn55" path="res://scenes/brainwasheddude.tscn" id="6_tefeu"]
 [ext_resource type="PackedScene" uid="uid://b7d6xpldfco2i" path="res://scenes/zombie.tscn" id="7_o6xl0"]
 [ext_resource type="Texture2D" uid="uid://dh3dco7li7tuw" path="res://assets/images/objects/house.png" id="8_85g3d"]
@@ -105,6 +107,33 @@ script = ExtResource("1_jyhfs")
 position = Vector2(2184, -225.00002)
 scale = Vector2(1.678, 1.5251778)
 texture = ExtResource("2_tbgi4")
+
+[node name="Large Tree" type="Sprite2D" parent="." unique_id=685737216]
+position = Vector2(1642, 4)
+texture = ExtResource("3_85g3d")
+
+[node name="Large Tree2" type="Sprite2D" parent="." unique_id=1833488870]
+position = Vector2(2994, -192)
+texture = ExtResource("3_85g3d")
+
+[node name="Large Tree3" type="Sprite2D" parent="." unique_id=1019950865]
+position = Vector2(365, 69)
+texture = ExtResource("3_85g3d")
+
+[node name="Small Tree" type="Sprite2D" parent="." unique_id=1091969341]
+position = Vector2(2008.0002, -27.000008)
+scale = Vector2(3.3702488, 3.762589)
+texture = ExtResource("4_choun")
+
+[node name="Small Tree3" type="Sprite2D" parent="." unique_id=1899612309]
+position = Vector2(1368, 5)
+scale = Vector2(3.3702488, 3.762589)
+texture = ExtResource("4_choun")
+
+[node name="Small Tree2" type="Sprite2D" parent="." unique_id=1477721695]
+position = Vector2(2641, -60)
+scale = Vector2(3.3702488, 3.762589)
+texture = ExtResource("4_choun")
 
 [node name="House" type="Sprite2D" parent="." unique_id=1485980315]
 position = Vector2(2536.0002, -48.000004)
