@@ -104,7 +104,7 @@ sources/0 = SubResource("TileSetAtlasSource_jyhfs")
 script = ExtResource("1_jyhfs")
 
 [node name="Background" type="Sprite2D" parent="." unique_id=755387324]
-position = Vector2(2184, -225.00002)
+position = Vector2(2189, -226.00002)
 scale = Vector2(1.678, 1.5251778)
 texture = ExtResource("2_tbgi4")
 
@@ -125,13 +125,18 @@ position = Vector2(2008.0002, -27.000008)
 scale = Vector2(3.3702488, 3.762589)
 texture = ExtResource("4_choun")
 
+[node name="Small Tree2" type="Sprite2D" parent="." unique_id=1477721695]
+position = Vector2(2641, -60)
+scale = Vector2(3.3702488, 3.762589)
+texture = ExtResource("4_choun")
+
 [node name="Small Tree3" type="Sprite2D" parent="." unique_id=1899612309]
 position = Vector2(1368, 5)
 scale = Vector2(3.3702488, 3.762589)
 texture = ExtResource("4_choun")
 
-[node name="Small Tree2" type="Sprite2D" parent="." unique_id=1477721695]
-position = Vector2(2641, -60)
+[node name="Small Tree4" type="Sprite2D" parent="." unique_id=332787148]
+position = Vector2(237, 5)
 scale = Vector2(3.3702488, 3.762589)
 texture = ExtResource("4_choun")
 
@@ -157,9 +162,6 @@ rendering_quadrant_size = 32
 [node name="Brainwashed" parent="." unique_id=12700795 instance=ExtResource("6_tefeu")]
 position = Vector2(681, 146)
 
-[node name="Zombie" parent="." unique_id=989445937 instance=ExtResource("7_o6xl0")]
-position = Vector2(2190, 15)
-
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=809747271]
 
 [node name="heartsContainer" parent="CanvasLayer" unique_id=572477552 instance=ExtResource("8_tipki")]
@@ -169,3 +171,6 @@ anchor_right = 1.0
 offset_left = -56.0
 offset_right = 0.0
 grow_horizontal = 0
+
+[node name="Zombie" parent="." unique_id=377507129 instance=ExtResource("7_o6xl0")]
+position = Vector2(2700, -17)
