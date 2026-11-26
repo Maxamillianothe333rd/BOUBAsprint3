@@ -98,9 +98,6 @@ tile_size = Vector2i(32, 32)
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_jyhfs")
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_lld7t"]
-size = Vector2(849, 507.21875)
-
 [node name="Main" type="Node2D" unique_id=310587639]
 script = ExtResource("1_jyhfs")
 
@@ -133,13 +130,6 @@ position = Vector2(681, 146)
 
 [node name="Zombie" parent="." unique_id=989445937 instance=ExtResource("7_o6xl0")]
 position = Vector2(2190, 15)
-
-[node name="Area2D(Zombie)" type="Area2D" parent="Zombie" unique_id=737190603]
-position = Vector2(-2190, -15)
-
-[node name="CollisionShape2D(Zombie)" type="CollisionShape2D" parent="Zombie/Area2D(Zombie)" unique_id=2022264951]
-position = Vector2(2396.5, -218.39063)
-shape = SubResource("RectangleShape2D_lld7t")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=809747271]
 

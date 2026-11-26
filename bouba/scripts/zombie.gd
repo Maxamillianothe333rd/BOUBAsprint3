@@ -5,12 +5,12 @@ const SPEED = 100.0
 
 var direction = -1
 var health = 5
-var is_attacking = false
-var chase = false
 
 func add_gravity(delta):
 	if not is_on_floor():
 		velocity += get_gravity() * delta
+	else:
+		pass
 
 func move_enemy():
 	velocity.x = SPEED * direction

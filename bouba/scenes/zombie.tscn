@@ -203,6 +203,9 @@ size = Vector2(25, 30)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vyxil"]
 size = Vector2(26, 30)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lld7t"]
+size = Vector2(184, 76.5)
+
 [node name="Zombie" type="CharacterBody2D" unique_id=989445937]
 script = ExtResource("1_ycv6i")
 
@@ -211,8 +214,6 @@ texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_lld7t")
 animation = &"walk"
 autoplay = "walk"
-frame = 8
-frame_progress = 0.3579055
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1596610434]
 position = Vector2(3.5, 0)
@@ -223,3 +224,9 @@ shape = SubResource("RectangleShape2D_c8ape")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="hitBox" unique_id=1465898333]
 position = Vector2(4, 0)
 shape = SubResource("RectangleShape2D_vyxil")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=570863099]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=242192343]
+position = Vector2(0, -20.75)
+shape = SubResource("RectangleShape2D_lld7t")
