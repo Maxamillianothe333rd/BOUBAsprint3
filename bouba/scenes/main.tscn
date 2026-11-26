@@ -98,6 +98,9 @@ tile_size = Vector2i(32, 32)
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_jyhfs")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lld7t"]
+size = Vector2(5020, 2579.5)
+
 [node name="Main" type="Node2D" unique_id=310587639]
 script = ExtResource("1_jyhfs")
 
@@ -140,3 +143,9 @@ anchor_right = 1.0
 offset_left = -56.0
 offset_right = 0.0
 grow_horizontal = 0
+
+[node name="Area2D" type="Area2D" parent="." unique_id=737190603]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=2022264951]
+position = Vector2(2189, -218.75)
+shape = SubResource("RectangleShape2D_lld7t")

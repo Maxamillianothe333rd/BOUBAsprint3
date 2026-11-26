@@ -5,6 +5,8 @@ const SPEED = 100.0
 
 var direction = -1
 var health = 5
+var is_attacking = false
+var chase = false
 
 func add_gravity(delta):
 	if not is_on_floor():
@@ -27,5 +29,3 @@ func _physics_process(delta: float) -> void:
 	elif direction == -1.0:
 		animated_sprite_2d.flip_h = false
 		
-func attack():
-	pass
